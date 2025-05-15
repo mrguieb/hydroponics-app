@@ -5,3 +5,4 @@ use App\Http\Controllers\DashboardController;
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
 Route::get('/latest-data', [DashboardController::class, 'latest']);
+Route::get('/sensor-latest', [DashboardController::class, 'getLatestData']);
